@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>upload</title>
+</head>
+<body>
+<form action="http://localhost:5000/emails/new" method="post" enctype="application/x-www-form-urlencoded">
+	<p><input type="text" name="text1" value="text default">
+	<p><input type="text" name="text2" value="a&#x03C9;b">
+	<p><input type="file" name="file1">
+	<p><input type="file" name="file2">
+	<p><input type="file" name="file3">
+	<p><button type="submit">Submit</button>
+</form>
+
+<form id="myform" action="http://localhost:5000/emails/new" method="post" enctype="multipart/form-data">
+	<input type="text" name="I_appear_in_req_body" id="mytext" />
+
+	<p></p><input type="text" name="from" value="mailgun@sandbox0ed50d931468401e83a8c137e46b0d8f.mailgun.org">
+	<p></p><input type="text" name="to" value="julcol03@gmail.com">
+	<p></p><input type="text" name="subject" value="Hello Vinson">
+	<p></p><input type="text" name="html" value="<div>Congratulations</div> vinson, you just sent an email with Mailgun!  You are truly awesome!">
+	<p><input type="file" name="file1">
+	<p><input type="file" name="file1">
+	<input type="submit" id="mysubmit" />
+</form>
+</body>
+</html>

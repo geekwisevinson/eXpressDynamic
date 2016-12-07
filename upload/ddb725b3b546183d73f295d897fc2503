@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<div style="border:1px solid black; padding:2px;" id="error-log"></div>
+
+
+
+
+
+<script src="consolelog.js"></script>
+<script src="scriptone.js"></script>
+
+</body>
+</html>
